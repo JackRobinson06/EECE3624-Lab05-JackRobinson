@@ -91,7 +91,7 @@ outer_loop1:
     ldi R16, 16
 	SUB R16, BlinkFreq            ; R16 is outer loop counter (16 - BlinkFreq)
 outer_loop2:
-    ldi R24, low(0xFFFFF)     ; load low and high parts of R25:R24 pair with
+    ldi R24, low(0xFFFF)     ; load low and high parts of R25:R24 pair with
     ldi R25, high(0xFFFF)    ; loop count by loading registers separately
     inner_loop2:
         sbiw R24, 1         ; decrement inner loop counter (R25:R24 pair)
